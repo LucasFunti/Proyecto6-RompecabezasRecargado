@@ -1,0 +1,6 @@
+<div>
+  <div id="oculto" >
+    <img  id="imagen_completa" src="images/imagen-completa.png" width="240px" height="240px" />
+  </div>
+  <button id="original" onclick="mostrarImagen()">Ver/Ocultar la imagen Original</button>
+</div>

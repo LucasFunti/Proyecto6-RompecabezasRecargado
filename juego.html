@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="col-40">
+      <div id="titulo">
+        <h1>Rompecabezas</h1>
+      </div>
+
+      <div id="instrucciones">
+        <h2>Instrucciones</h2>
+        <ul class = "desc_instrucciones">
+          <li>Mover las piezas presionando las teclas de flechas</li>
+          <li>Encontrar el orden correcto de las piezas para armar el rompecabezas</li>
+        </ul>
+      </div>
+      <div id="piezas">
+        <h2>Cantidad de piezas por lado</h2>
+        <button id="restar_pieza">-</button>
+        <label id="cantidad_piezas">3</label>
+        <button id="sumar_pieza">+</button>
+      </div>
+
+      <div id="movimientos">
+        <h2>Cantidad de movimientos disponibles</h2>
+        <label id="contadorDeMovimientos"> contadorDeMovimientos </label>
+      </div>
+
+      <div id="mezclar"><button id="mezclar">Mezclar</button></div>
+
+    </div>
+
+    <div class="col-60">
+      <div id="juego">
+          <div id="piezas">
+            <canvas id="miCanvas" width="600" height="600" style="border:1px solid #000080;">
+            </canvas>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/Juego.js"></script>
+
+  </body>
+</html>

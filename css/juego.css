@@ -1,0 +1,71 @@
+
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-color:  #083358;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FC3C3C;
+  padding: 30px;
+  color: black;
+}
+
+#titulo{
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+#instrucciones #piezas{
+  font-family: serif;
+  font-size: 18px;
+}
+.desc_instrucciones{
+  font-family: cursive;
+  font-size: 15px;
+}
+#piezas img{
+  width: 33%;
+  height: 33%;
+  float: left;
+  border: 1px solid #0F4471;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+  width: 600px;
+  height: 600px;
+  background-color: #0F4471;
+}
+
+#original{
+  font-size: 15px;
+}
+#oculto{
+  display: flex;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
